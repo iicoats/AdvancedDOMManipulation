@@ -1,16 +1,31 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function () {
-    const header = document.querySelector("header")
-    console.log("Selected header:",header);
-})
+const mainContainer = document.getElementById("main-container");
+const listContainer = getElementById("list-container");
+const buttons = document.querySelectorAll("button");
 
-const element = document.getElementById(main-container) 
-    element.style = black;
+mainContainer.style.border = "1px solid black";
+mainContainer.style.padding = "50px";
 
+buttons[0].addEventListener("click", () => {
+  const li = document.createElement("li");
+  li.innerText = "New Item";
 
-const button = document.querySelectorAll(button);
+  li.addEventListener("click", () => {
+    li.classList.add("highlight");
+  });
+  listContainer.appendChild(li);
+});
 
-function newText  (newText) {
-    const element2 = document.getElementById(list-container) 
-}
+buttons[1].addEventListener("click", () => {
+  const listOfLi = document.querySelectorAll("li");
+  for (let i = 0; i < listOfLi.length; i++) {
+    listOfLi[i].innerText = "Updated Item";
+  }
+});
+
+buttons[2].addEventListener("click", () => {
+  const listOfLi = document.querySelectorAll("li");
+  const lastItem = listOfLi.length - 1;
+  listofLi[lastItem].remove();
+});
