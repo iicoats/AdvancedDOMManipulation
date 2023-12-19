@@ -1,7 +1,7 @@
 "use strict";
 
 const mainContainer = document.getElementById("main-container");
-const listContainer = getElementById("list-container");
+const listContainer = document.getElementById("list-container");
 const buttons = document.querySelectorAll("button");
 
 mainContainer.style.border = "1px solid black";
