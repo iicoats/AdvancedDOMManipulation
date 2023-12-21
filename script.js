@@ -27,5 +27,5 @@ buttons[1].addEventListener("click", () => {
 buttons[2].addEventListener("click", () => {
   const listOfLi = document.querySelectorAll("li");
   const lastItem = listOfLi.length - 1;
-  listofLi[lastItem].remove();
+  listOfLi[lastItem].remove();
 });
